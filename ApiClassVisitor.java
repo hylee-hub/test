@@ -26,6 +26,7 @@ public class ApiClassVisitor extends ClassVisitor {
     private boolean              isMock;
     private String               mApiUtilsClass;
     public  String               errorStr;
+    public  String               errorStrTemp;
 
     public ApiClassVisitor(ClassVisitor classVisitor, Map<String, ApiInfo> apiImplMap, List<String> apiClasses, String apiUtilsClass) {
         super(Opcodes.ASM5, classVisitor);
